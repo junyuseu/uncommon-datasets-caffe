@@ -2,7 +2,7 @@
 run uncommon datasets on caffe,such as cifar100 and SVHN
 
 # scripts
-include some scripts,such as convert cifar100 to lmdb,read lmdb and compute image mean
+include some python scripts to implemnet some functions,such as convert cifar100 to lmdb,convert svhn to lmdb,read lmdb,compute image mean and visulize pictures
 
 # blog address
 [zhihu](https://zhuanlan.zhihu.com/p/22147033)
