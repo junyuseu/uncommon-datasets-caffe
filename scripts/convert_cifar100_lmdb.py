@@ -9,6 +9,7 @@ import lmdb
 import caffe
 
 def unpickle(file):
+    """ unpickle the data """
     fo = open(file, 'rb')
     dict = cPickle.load(fo)
     fo.close()
@@ -21,6 +22,7 @@ def shuffle_data(data, labels):
     return data, labels
 
 def load_data(train_file):
+    """  load the train and test data"""
     d = unpickle(train_file)
     data = d['data']
     #coarse_labels = d['coarse_labels']

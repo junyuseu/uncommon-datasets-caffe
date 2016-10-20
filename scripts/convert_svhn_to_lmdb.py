@@ -6,6 +6,7 @@ import random
 from caffe.proto import caffe_pb2
 
 def main():
+	""" convert the svhn data to lmdb """
     train=sio.loadmat('train_32x32.mat')
     test=sio.loadmat('test_32x32.mat')
 

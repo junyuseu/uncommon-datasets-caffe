@@ -6,6 +6,7 @@ import caffe
 from caffe.proto import caffe_pb2
 
 def unpickle(file):
+    """ unpickle the data """
     fo = open(file, 'rb')
     dict = cPickle.load(fo)
     fo.close()

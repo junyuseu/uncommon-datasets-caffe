@@ -11,7 +11,7 @@ datum=caffe_pb2.Datum()
 
 N=0
 mean = np.zeros((1, 3, 32, 32))
-beginTime = time.time()
+begintime = time.time()
 for key,value in lmdb_cursor:
     datum.ParseFromString(value)
     data=caffe.io.datum_to_array(datum)
@@ -21,7 +21,7 @@ for key,value in lmdb_cursor:
     mean[0,2] += image[:, :, 2]
     N+=1
     if N % 1000 == 0:
-        elapsed = time.time() - beginTime
+        elapsed = time.time() - begintime
         print("Processed {} images in {:.2f} seconds. "
               "{:.2f} images/second.".format(N, elapsed,
                                              N / elapsed))
