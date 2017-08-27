@@ -3,6 +3,7 @@ import cPickle
 
 import numpy as np
 import sklearn
+import sklearn.cross_validation
 import sklearn.linear_model
 
 import lmdb
